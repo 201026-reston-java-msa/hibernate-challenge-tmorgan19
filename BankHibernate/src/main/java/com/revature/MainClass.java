@@ -29,6 +29,7 @@ public class MainClass {
 		// to persist objects to your database.
 		//----------------------------------------------------------
 		
+//		hibernateCreateExample();
 //		hibernateReadExample();
 //		hibernateReadAccount();
 //		getVsLoad();
@@ -42,7 +43,7 @@ public class MainClass {
 		Dao dao = new BankDaoImpl();
 		
 		//Instantiate a BankUser Mapped to a Table, provide the primary key
-		BankUser user = new BankUser(1, null, null, null, null);
+		BankUser user = new BankUser(50, null, null, null, null);
 		
 		//Use the pojo to pull the record from the table
 		user = dao.getBankUserById(user);
